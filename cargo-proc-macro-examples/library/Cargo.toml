@@ -7,7 +7,15 @@ edition = "2021"
 
 [dependencies]
 
+# Panics on cargo check in ../application
 [[example]]
 name = "foo"
-crate-type = ["proc-macro"]
+crate-type = ["proc-macro"] # can put any library type here
 proc-macro = true
+
+# No issue
+# [[example]]
+# name = "foo"
+# crate-type = ["proc-macro"] # any type except proc-macro
+
+# spec at: https://doc.rust-lang.org/cargo/reference/cargo-targets.html?highlight=examples#the-crate-type-field
