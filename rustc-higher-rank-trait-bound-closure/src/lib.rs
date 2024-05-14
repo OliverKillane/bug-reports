@@ -11,19 +11,19 @@ mod fails {
     /// 18 |         F: for<'a> Fn(X::Content<'a>) -> &'a i32
     ///    |                                          ^^^^^^^
     /// ```
-    /// 
-    /// The issue: At first glance `'a` *does* appear in the trait input type, except we cannot know `'a` 
+    ///
+    /// The issue: At first glance `'a` *does* appear in the trait input type, except we cannot know `'a`
     /// will be part of Foo::Content, so there is no guarentee after monomorphisation that `'a` will be present.
-    /// 
-    /// Suggestion: Add this kind of example to the 
+    ///
+    /// Suggestion: Add this kind of example to the
     #[allow(dead_code)]
     struct Bar<X, F>
     where
         X: super::Foo,
-        F: for<'a> Fn(X::Content<'a>) -> &'a i32
+        F: for<'a> Fn(X::Content<'a>) -> &'a i32,
     {
         x: X,
-        f: F
+        f: F,
     }
 }
 
@@ -33,10 +33,9 @@ mod correct {
     struct Bar<X, F>
     where
         X: super::Foo,
-        F: for<'a> Fn(X::Content<'a>, /* dummy param */ &'a ()) -> &'a i32
+        F: for<'a> Fn(X::Content<'a>, /* dummy param */ &'a ()) -> &'a i32,
     {
         x: X,
-        f: F
+        f: F,
     }
 }
-
