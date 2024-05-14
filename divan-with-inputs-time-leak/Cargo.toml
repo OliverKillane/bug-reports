@@ -1,0 +1,11 @@
+[package]
+name = "divan-with-inputs-time-leak"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+divan = { git = "https://github.com/nvzqz/divan.git", branch = "main" }
+
+[[bench]]
+name = "minimised_example"
+harness = false
