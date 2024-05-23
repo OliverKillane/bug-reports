@@ -2,7 +2,6 @@
 
 #[divan::bench(
     consts = [100,1000,10000,100000],
-    max_time = 0.1
 )]
 fn with_sleep<const SLEEP_TIME: u64>(bencher: divan::Bencher) {
     bencher
@@ -16,7 +15,6 @@ fn with_sleep<const SLEEP_TIME: u64>(bencher: divan::Bencher) {
 /// An even simpler sleep with mm_pause
 #[divan::bench(
     consts = [100,1000,10000,100000],
-    max_time = 0.1
 )]
 fn with_mm_pause<const SLEEP_ITERS: u64>(bencher: divan::Bencher) {
     bencher
@@ -32,7 +30,6 @@ fn with_mm_pause<const SLEEP_ITERS: u64>(bencher: divan::Bencher) {
 
 #[divan::bench(
     consts = [100,1000,10000,100000],
-    max_time = 0.1
 )]
 fn with_nothing<const SLEEP_TIME: u64>(bencher: divan::Bencher) {
     bencher.with_inputs(|| ()).bench_refs(|_| ())

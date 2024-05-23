@@ -1,0 +1,9 @@
+[package]
+name = "syn-expr-let-incorrect-fail"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+syn = { version = "2.0.65", features = ["full", "extra-traits"] }
+quote = "1.0.36"
+proc-macro2 = "1.0.83"
