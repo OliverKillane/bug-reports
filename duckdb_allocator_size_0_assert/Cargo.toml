@@ -1,0 +1,7 @@
+[package]
+name = "duckdb_allocator_size_0_assert"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+duckdb = { version = "0.10.2", features = ["bundled"] }
