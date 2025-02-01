@@ -1,6 +1,14 @@
 ## Failing to install pytorch
 Either hands, and fails on timeout (all progress bars freeze), or with connection reset error.
 
+From a fresh install of uv:
+```bash
+cargo install --git https://github.com/astral-sh/uv uv
+```
+```bash
+uv --version
+uv 0.5.26 (b0e9781da 2025-02-01)
+```
 
 ### Timeout Failure
 ```bash
