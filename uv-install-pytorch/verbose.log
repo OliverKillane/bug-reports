@@ -1,0 +1,548 @@
+ uv add torch --verbose                                ⏱️ 10m15s 21:05:36
+DEBUG uv 0.5.26 (b0e9781da 2025-02-01)
+DEBUG Found project root: `/home/oliverkillane/files/bug-reports/uv-install-pytorch`
+DEBUG No workspace root found, using project root
+DEBUG Reading Python requests from version file at `/home/oliverkillane/files/bug-reports/uv-install-pytorch/.python-version`
+DEBUG Using Python request `3.12` from version file at `.python-version`
+DEBUG Checking for Python environment at `.venv`
+DEBUG The virtual environment's Python version satisfies `3.12`
+DEBUG Using request timeout of 30s
+DEBUG Found static `pyproject.toml` for: uv-install-pytorch @ file:///home/oliverkillane/files/bug-reports/uv-install-pytorch
+DEBUG No workspace root found, using project root
+DEBUG Solving with installed Python version: 3.12.8
+DEBUG Solving with target Python version: >=3.12
+DEBUG Adding direct dependency: uv-install-pytorch*
+DEBUG Searching for a compatible version of uv-install-pytorch @ file:///home/oliverkillane/files/bug-reports/uv-install-pytorch (*)
+DEBUG Adding direct dependency: torch*
+DEBUG Found stale response for: https://pypi.org/simple/torch/
+DEBUG Sending revalidation request for: https://pypi.org/simple/torch/
+DEBUG Found not-modified response for: https://pypi.org/simple/torch/
+DEBUG Searching for a compatible version of torch (*)
+DEBUG Selecting: torch==2.6.0 [compatible] (torch-2.6.0-cp312-cp312-manylinux1_x86_64.whl)
+DEBUG Found fresh response for: https://files.pythonhosted.org/packages/e5/35/0c52d708144c2deb595cd22819a609f78fdd699b95ff6f0ebcd456e3c7c1/torch-2.6.0-cp312-cp312-manylinux1_x86_64.whl.metadata
+DEBUG Adding transitive dependency for torch==2.6.0: filelock*
+DEBUG Adding transitive dependency for torch==2.6.0: fsspec*
+DEBUG Adding transitive dependency for torch==2.6.0: jinja2*
+DEBUG Adding transitive dependency for torch==2.6.0: networkx*
+DEBUG Adding transitive dependency for torch==2.6.0: nvidia-cublas-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'}>=12.4.5.8, <12.4.5.8+
+DEBUG Adding transitive dependency for torch==2.6.0: nvidia-cuda-cupti-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'}>=12.4.127, <12.4.127+
+DEBUG Adding transitive dependency for torch==2.6.0: nvidia-cuda-nvrtc-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'}>=12.4.127, <12.4.127+
+DEBUG Adding transitive dependency for torch==2.6.0: nvidia-cuda-runtime-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'}>=12.4.127, <12.4.127+
+DEBUG Adding transitive dependency for torch==2.6.0: nvidia-cudnn-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'}>=9.1.0.70, <9.1.0.70+
+DEBUG Adding transitive dependency for torch==2.6.0: nvidia-cufft-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'}>=11.2.1.3, <11.2.1.3+
+DEBUG Adding transitive dependency for torch==2.6.0: nvidia-curand-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'}>=10.3.5.147, <10.3.5.147+
+DEBUG Adding transitive dependency for torch==2.6.0: nvidia-cusolver-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'}>=11.6.1.9, <11.6.1.9+
+DEBUG Adding transitive dependency for torch==2.6.0: nvidia-cusparse-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'}>=12.3.1.170, <12.3.1.170+
+DEBUG Adding transitive dependency for torch==2.6.0: nvidia-cusparselt-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'}>=0.6.2, <0.6.2+
+DEBUG Adding transitive dependency for torch==2.6.0: nvidia-nccl-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'}>=2.21.5, <2.21.5+
+DEBUG Adding transitive dependency for torch==2.6.0: nvidia-nvjitlink-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'}>=12.4.127, <12.4.127+
+DEBUG Adding transitive dependency for torch==2.6.0: nvidia-nvtx-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'}>=12.4.127, <12.4.127+
+DEBUG Adding transitive dependency for torch==2.6.0: setuptools{python_full_version >= '3.12'}*
+DEBUG Adding transitive dependency for torch==2.6.0: sympy{python_full_version >= '3.9'}>=1.13.1, <1.13.1+
+DEBUG Adding transitive dependency for torch==2.6.0: triton{platform_machine == 'x86_64' and sys_platform == 'linux'}>=3.2.0, <3.2.0+
+DEBUG Adding transitive dependency for torch==2.6.0: typing-extensions>=4.10.0
+DEBUG Found stale response for: https://pypi.org/simple/filelock/
+DEBUG Sending revalidation request for: https://pypi.org/simple/filelock/
+DEBUG Found stale response for: https://pypi.org/simple/fsspec/
+DEBUG Sending revalidation request for: https://pypi.org/simple/fsspec/
+DEBUG Found stale response for: https://pypi.org/simple/networkx/
+DEBUG Sending revalidation request for: https://pypi.org/simple/networkx/
+DEBUG Found stale response for: https://pypi.org/simple/nvidia-cuda-cupti-cu12/
+DEBUG Sending revalidation request for: https://pypi.org/simple/nvidia-cuda-cupti-cu12/
+DEBUG Found stale response for: https://pypi.org/simple/jinja2/
+DEBUG Sending revalidation request for: https://pypi.org/simple/jinja2/
+DEBUG Found stale response for: https://pypi.org/simple/nvidia-cublas-cu12/
+DEBUG Sending revalidation request for: https://pypi.org/simple/nvidia-cublas-cu12/
+DEBUG Found stale response for: https://pypi.org/simple/nvidia-cuda-nvrtc-cu12/
+DEBUG Sending revalidation request for: https://pypi.org/simple/nvidia-cuda-nvrtc-cu12/
+DEBUG Found stale response for: https://pypi.org/simple/nvidia-cufft-cu12/
+DEBUG Sending revalidation request for: https://pypi.org/simple/nvidia-cufft-cu12/
+DEBUG Found stale response for: https://pypi.org/simple/nvidia-cuda-runtime-cu12/
+DEBUG Sending revalidation request for: https://pypi.org/simple/nvidia-cuda-runtime-cu12/
+DEBUG Found stale response for: https://pypi.org/simple/nvidia-curand-cu12/
+DEBUG Sending revalidation request for: https://pypi.org/simple/nvidia-curand-cu12/
+DEBUG Found stale response for: https://pypi.org/simple/nvidia-cudnn-cu12/
+DEBUG Sending revalidation request for: https://pypi.org/simple/nvidia-cudnn-cu12/
+DEBUG Found stale response for: https://pypi.org/simple/nvidia-cusparselt-cu12/
+DEBUG Sending revalidation request for: https://pypi.org/simple/nvidia-cusparselt-cu12/
+DEBUG Found stale response for: https://pypi.org/simple/nvidia-cusolver-cu12/
+DEBUG Sending revalidation request for: https://pypi.org/simple/nvidia-cusolver-cu12/
+DEBUG Found stale response for: https://pypi.org/simple/nvidia-nccl-cu12/
+DEBUG Sending revalidation request for: https://pypi.org/simple/nvidia-nccl-cu12/
+DEBUG Found stale response for: https://pypi.org/simple/nvidia-cusparse-cu12/
+DEBUG Sending revalidation request for: https://pypi.org/simple/nvidia-cusparse-cu12/
+DEBUG Found stale response for: https://pypi.org/simple/nvidia-nvtx-cu12/
+DEBUG Sending revalidation request for: https://pypi.org/simple/nvidia-nvtx-cu12/
+DEBUG Found stale response for: https://pypi.org/simple/nvidia-nvjitlink-cu12/
+DEBUG Sending revalidation request for: https://pypi.org/simple/nvidia-nvjitlink-cu12/
+DEBUG Found stale response for: https://pypi.org/simple/sympy/
+DEBUG Sending revalidation request for: https://pypi.org/simple/sympy/
+DEBUG Found stale response for: https://pypi.org/simple/triton/
+DEBUG Sending revalidation request for: https://pypi.org/simple/triton/
+DEBUG Found stale response for: https://pypi.org/simple/typing-extensions/
+DEBUG Sending revalidation request for: https://pypi.org/simple/typing-extensions/
+DEBUG Found stale response for: https://pypi.org/simple/setuptools/
+DEBUG Sending revalidation request for: https://pypi.org/simple/setuptools/
+DEBUG Found not-modified response for: https://pypi.org/simple/nvidia-curand-cu12/
+DEBUG Found not-modified response for: https://pypi.org/simple/jinja2/
+DEBUG Found not-modified response for: https://pypi.org/simple/filelock/
+DEBUG Found not-modified response for: https://pypi.org/simple/networkx/
+DEBUG Found not-modified response for: https://pypi.org/simple/fsspec/
+DEBUG Found not-modified response for: https://pypi.org/simple/nvidia-cusolver-cu12/
+DEBUG Found not-modified response for: https://pypi.org/simple/nvidia-cuda-runtime-cu12/
+DEBUG Found not-modified response for: https://pypi.org/simple/nvidia-cusparse-cu12/
+DEBUG Found not-modified response for: https://pypi.org/simple/nvidia-nvjitlink-cu12/
+DEBUG Found not-modified response for: https://pypi.org/simple/nvidia-cudnn-cu12/
+DEBUG Found not-modified response for: https://pypi.org/simple/sympy/
+DEBUG Found not-modified response for: https://pypi.org/simple/triton/
+DEBUG Found not-modified response for: https://pypi.org/simple/nvidia-cusparselt-cu12/
+DEBUG Found not-modified response for: https://pypi.org/simple/nvidia-cuda-cupti-cu12/
+DEBUG Found not-modified response for: https://pypi.org/simple/nvidia-cuda-nvrtc-cu12/
+DEBUG Found not-modified response for: https://pypi.org/simple/nvidia-nvtx-cu12/
+DEBUG Found not-modified response for: https://pypi.org/simple/nvidia-cufft-cu12/
+DEBUG Found not-modified response for: https://pypi.org/simple/nvidia-nccl-cu12/
+DEBUG Found not-modified response for: https://pypi.org/simple/nvidia-cublas-cu12/
+DEBUG Searching for a compatible version of nvidia-cublas-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'} (>=12.4.5.8, <12.4.5.8+)
+DEBUG Selecting: nvidia-cublas-cu12==12.4.5.8 [compatible] (nvidia_cublas_cu12-12.4.5.8-py3-none-manylinux2014_aarch64.whl)
+DEBUG Adding transitive dependency for nvidia-cublas-cu12==12.4.5.8: nvidia-cublas-cu12==12.4.5.8
+DEBUG Adding transitive dependency for nvidia-cublas-cu12==12.4.5.8: nvidia-cublas-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'}==12.4.5.8
+DEBUG Searching for a compatible version of nvidia-cublas-cu12 (==12.4.5.8)
+DEBUG Selecting: nvidia-cublas-cu12==12.4.5.8 [compatible] (nvidia_cublas_cu12-12.4.5.8-py3-none-manylinux2014_aarch64.whl)
+DEBUG Found fresh response for: https://files.pythonhosted.org/packages/bd/0f/2ba5fbcd631e3e88689309dbe978c5769e883e4b84ebfe7da30b43275c5a/jinja2-3.1.5-py3-none-any.whl.metadata
+DEBUG Found not-modified response for: https://pypi.org/simple/typing-extensions/
+DEBUG Found not-modified response for: https://pypi.org/simple/setuptools/
+DEBUG Found fresh response for: https://files.pythonhosted.org/packages/e2/94/758680531a00d06e471ef649e4ec2ed6bf185356a7f9fbfbb7368a40bd49/fsspec-2025.2.0-py3-none-any.whl.metadata
+DEBUG Found fresh response for: https://files.pythonhosted.org/packages/b9/54/dd730b32ea14ea797530a4479b2ed46a6fb250f682a9cfb997e968bf0261/networkx-3.4.2-py3-none-any.whl.metadata
+DEBUG Found fresh response for: https://files.pythonhosted.org/packages/89/ec/00d68c4ddfedfe64159999e5f8a98fb8442729a63e2077eb9dcd89623d27/filelock-3.17.0-py3-none-any.whl.metadata
+DEBUG Found fresh response for: https://files.pythonhosted.org/packages/7f/7f/7fbae15a3982dc9595e49ce0f19332423b260045d0a6afe93cdbe2f1f624/nvidia_cublas_cu12-12.4.5.8-py3-none-manylinux2014_aarch64.whl.metadata
+DEBUG Searching for a compatible version of nvidia-cublas-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'} (==12.4.5.8)
+DEBUG Selecting: nvidia-cublas-cu12==12.4.5.8 [compatible] (nvidia_cublas_cu12-12.4.5.8-py3-none-manylinux2014_aarch64.whl)
+DEBUG Searching for a compatible version of nvidia-cuda-cupti-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'} (>=12.4.127, <12.4.127+)
+DEBUG Selecting: nvidia-cuda-cupti-cu12==12.4.127 [compatible] (nvidia_cuda_cupti_cu12-12.4.127-py3-none-manylinux2014_aarch64.whl)
+DEBUG Adding transitive dependency for nvidia-cuda-cupti-cu12==12.4.127: nvidia-cuda-cupti-cu12==12.4.127
+DEBUG Adding transitive dependency for nvidia-cuda-cupti-cu12==12.4.127: nvidia-cuda-cupti-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'}==12.4.127
+DEBUG Searching for a compatible version of nvidia-cuda-cupti-cu12 (==12.4.127)
+DEBUG Selecting: nvidia-cuda-cupti-cu12==12.4.127 [compatible] (nvidia_cuda_cupti_cu12-12.4.127-py3-none-manylinux2014_aarch64.whl)
+DEBUG Found fresh response for: https://files.pythonhosted.org/packages/93/b5/9fb3d00386d3361b03874246190dfec7b206fd74e6e287b26a8fcb359d95/nvidia_cuda_cupti_cu12-12.4.127-py3-none-manylinux2014_aarch64.whl.metadata
+DEBUG Searching for a compatible version of nvidia-cuda-cupti-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'} (==12.4.127)
+DEBUG Found fresh response for: https://files.pythonhosted.org/packages/26/9f/ad63fc0248c5379346306f8668cda6e2e2e9c95e01216d2b8ffd9ff037d0/typing_extensions-4.12.2-py3-none-any.whl.metadata
+DEBUG Selecting: nvidia-cuda-cupti-cu12==12.4.127 [compatible] (nvidia_cuda_cupti_cu12-12.4.127-py3-none-manylinux2014_aarch64.whl)
+DEBUG Searching for a compatible version of nvidia-cuda-nvrtc-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'} (>=12.4.127, <12.4.127+)
+DEBUG Selecting: nvidia-cuda-nvrtc-cu12==12.4.127 [compatible] (nvidia_cuda_nvrtc_cu12-12.4.127-py3-none-manylinux2014_aarch64.whl)
+DEBUG Adding transitive dependency for nvidia-cuda-nvrtc-cu12==12.4.127: nvidia-cuda-nvrtc-cu12==12.4.127
+DEBUG Adding transitive dependency for nvidia-cuda-nvrtc-cu12==12.4.127: nvidia-cuda-nvrtc-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'}==12.4.127
+DEBUG Searching for a compatible version of nvidia-cuda-nvrtc-cu12 (==12.4.127)
+DEBUG Selecting: nvidia-cuda-nvrtc-cu12==12.4.127 [compatible] (nvidia_cuda_nvrtc_cu12-12.4.127-py3-none-manylinux2014_aarch64.whl)
+DEBUG Found fresh response for: https://files.pythonhosted.org/packages/77/aa/083b01c427e963ad0b314040565ea396f914349914c298556484f799e61b/nvidia_cuda_nvrtc_cu12-12.4.127-py3-none-manylinux2014_aarch64.whl.metadata
+DEBUG Searching for a compatible version of nvidia-cuda-nvrtc-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'} (==12.4.127)
+DEBUG Selecting: nvidia-cuda-nvrtc-cu12==12.4.127 [compatible] (nvidia_cuda_nvrtc_cu12-12.4.127-py3-none-manylinux2014_aarch64.whl)
+DEBUG Searching for a compatible version of nvidia-cuda-runtime-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'} (>=12.4.127, <12.4.127+)
+DEBUG Selecting: nvidia-cuda-runtime-cu12==12.4.127 [compatible] (nvidia_cuda_runtime_cu12-12.4.127-py3-none-manylinux2014_aarch64.whl)
+DEBUG Adding transitive dependency for nvidia-cuda-runtime-cu12==12.4.127: nvidia-cuda-runtime-cu12==12.4.127
+DEBUG Adding transitive dependency for nvidia-cuda-runtime-cu12==12.4.127: nvidia-cuda-runtime-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'}==12.4.127
+DEBUG Searching for a compatible version of nvidia-cuda-runtime-cu12 (==12.4.127)
+DEBUG Selecting: nvidia-cuda-runtime-cu12==12.4.127 [compatible] (nvidia_cuda_runtime_cu12-12.4.127-py3-none-manylinux2014_aarch64.whl)
+DEBUG Found fresh response for: https://files.pythonhosted.org/packages/a1/aa/b656d755f474e2084971e9a297def515938d56b466ab39624012070cb773/nvidia_cuda_runtime_cu12-12.4.127-py3-none-manylinux2014_aarch64.whl.metadata
+DEBUG Searching for a compatible version of nvidia-cuda-runtime-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'} (==12.4.127)
+DEBUG Selecting: nvidia-cuda-runtime-cu12==12.4.127 [compatible] (nvidia_cuda_runtime_cu12-12.4.127-py3-none-manylinux2014_aarch64.whl)
+DEBUG Searching for a compatible version of nvidia-cudnn-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'} (>=9.1.0.70, <9.1.0.70+)
+DEBUG Selecting: nvidia-cudnn-cu12==9.1.0.70 [compatible] (nvidia_cudnn_cu12-9.1.0.70-py3-none-manylinux2014_x86_64.whl)
+DEBUG Adding transitive dependency for nvidia-cudnn-cu12==9.1.0.70: nvidia-cudnn-cu12==9.1.0.70
+DEBUG Adding transitive dependency for nvidia-cudnn-cu12==9.1.0.70: nvidia-cudnn-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'}==9.1.0.70
+DEBUG Searching for a compatible version of nvidia-cudnn-cu12 (==9.1.0.70)
+DEBUG Selecting: nvidia-cudnn-cu12==9.1.0.70 [compatible] (nvidia_cudnn_cu12-9.1.0.70-py3-none-manylinux2014_x86_64.whl)
+DEBUG Found fresh response for: https://files.pythonhosted.org/packages/9f/fd/713452cd72343f682b1c7b9321e23829f00b842ceaedcda96e742ea0b0b3/nvidia_cudnn_cu12-9.1.0.70-py3-none-manylinux2014_x86_64.whl.metadata
+DEBUG Adding transitive dependency for nvidia-cudnn-cu12==9.1.0.70: nvidia-cublas-cu12*
+DEBUG Searching for a compatible version of nvidia-cudnn-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'} (==9.1.0.70)
+DEBUG Selecting: nvidia-cudnn-cu12==9.1.0.70 [compatible] (nvidia_cudnn_cu12-9.1.0.70-py3-none-manylinux2014_x86_64.whl)
+DEBUG Adding transitive dependency for nvidia-cudnn-cu12==9.1.0.70: nvidia-cublas-cu12*
+DEBUG Searching for a compatible version of nvidia-cufft-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'} (>=11.2.1.3, <11.2.1.3+)
+DEBUG Selecting: nvidia-cufft-cu12==11.2.1.3 [compatible] (nvidia_cufft_cu12-11.2.1.3-py3-none-manylinux2014_aarch64.whl)
+DEBUG Adding transitive dependency for nvidia-cufft-cu12==11.2.1.3: nvidia-cufft-cu12==11.2.1.3
+DEBUG Adding transitive dependency for nvidia-cufft-cu12==11.2.1.3: nvidia-cufft-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'}==11.2.1.3
+DEBUG Searching for a compatible version of nvidia-cufft-cu12 (==11.2.1.3)
+DEBUG Selecting: nvidia-cufft-cu12==11.2.1.3 [compatible] (nvidia_cufft_cu12-11.2.1.3-py3-none-manylinux2014_aarch64.whl)
+DEBUG Found fresh response for: https://files.pythonhosted.org/packages/7a/8a/0e728f749baca3fbeffad762738276e5df60851958be7783af121a7221e7/nvidia_cufft_cu12-11.2.1.3-py3-none-manylinux2014_aarch64.whl.metadata
+DEBUG Adding transitive dependency for nvidia-cufft-cu12==11.2.1.3: nvidia-nvjitlink-cu12*
+DEBUG Searching for a compatible version of nvidia-cufft-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'} (==11.2.1.3)
+DEBUG Selecting: nvidia-cufft-cu12==11.2.1.3 [compatible] (nvidia_cufft_cu12-11.2.1.3-py3-none-manylinux2014_aarch64.whl)
+DEBUG Adding transitive dependency for nvidia-cufft-cu12==11.2.1.3: nvidia-nvjitlink-cu12*
+DEBUG Searching for a compatible version of nvidia-curand-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'} (>=10.3.5.147, <10.3.5.147+)
+DEBUG Selecting: nvidia-curand-cu12==10.3.5.147 [compatible] (nvidia_curand_cu12-10.3.5.147-py3-none-manylinux2014_aarch64.whl)
+DEBUG Adding transitive dependency for nvidia-curand-cu12==10.3.5.147: nvidia-curand-cu12==10.3.5.147
+DEBUG Adding transitive dependency for nvidia-curand-cu12==10.3.5.147: nvidia-curand-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'}==10.3.5.147
+DEBUG Searching for a compatible version of nvidia-curand-cu12 (==10.3.5.147)
+DEBUG Selecting: nvidia-curand-cu12==10.3.5.147 [compatible] (nvidia_curand_cu12-10.3.5.147-py3-none-manylinux2014_aarch64.whl)
+DEBUG Found fresh response for: https://files.pythonhosted.org/packages/03/f8/9d85593582bd99b8d7c65634d2304780aefade049b2b94d96e44084be90b/nvidia_nvjitlink_cu12-12.8.61-py3-none-manylinux2010_x86_64.manylinux_2_12_x86_64.whl.metadata
+DEBUG Found fresh response for: https://files.pythonhosted.org/packages/80/9c/a79180e4d70995fdf030c6946991d0171555c6edf95c265c6b2bf7011112/nvidia_curand_cu12-10.3.5.147-py3-none-manylinux2014_aarch64.whl.metadata
+DEBUG Searching for a compatible version of nvidia-curand-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'} (==10.3.5.147)
+DEBUG Selecting: nvidia-curand-cu12==10.3.5.147 [compatible] (nvidia_curand_cu12-10.3.5.147-py3-none-manylinux2014_aarch64.whl)
+DEBUG Searching for a compatible version of nvidia-cusolver-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'} (>=11.6.1.9, <11.6.1.9+)
+DEBUG Selecting: nvidia-cusolver-cu12==11.6.1.9 [compatible] (nvidia_cusolver_cu12-11.6.1.9-py3-none-manylinux2014_aarch64.whl)
+DEBUG Adding transitive dependency for nvidia-cusolver-cu12==11.6.1.9: nvidia-cusolver-cu12==11.6.1.9
+DEBUG Adding transitive dependency for nvidia-cusolver-cu12==11.6.1.9: nvidia-cusolver-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'}==11.6.1.9
+DEBUG Searching for a compatible version of nvidia-cusolver-cu12 (==11.6.1.9)
+DEBUG Selecting: nvidia-cusolver-cu12==11.6.1.9 [compatible] (nvidia_cusolver_cu12-11.6.1.9-py3-none-manylinux2014_aarch64.whl)
+DEBUG Found fresh response for: https://files.pythonhosted.org/packages/46/6b/a5c33cf16af09166845345275c34ad2190944bcc6026797a39f8e0a282e0/nvidia_cusolver_cu12-11.6.1.9-py3-none-manylinux2014_aarch64.whl.metadata
+DEBUG Adding transitive dependency for nvidia-cusolver-cu12==11.6.1.9: nvidia-cublas-cu12*
+DEBUG Adding transitive dependency for nvidia-cusolver-cu12==11.6.1.9: nvidia-cusparse-cu12*
+DEBUG Adding transitive dependency for nvidia-cusolver-cu12==11.6.1.9: nvidia-nvjitlink-cu12*
+DEBUG Searching for a compatible version of nvidia-cusolver-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'} (==11.6.1.9)
+DEBUG Selecting: nvidia-cusolver-cu12==11.6.1.9 [compatible] (nvidia_cusolver_cu12-11.6.1.9-py3-none-manylinux2014_aarch64.whl)
+DEBUG Adding transitive dependency for nvidia-cusolver-cu12==11.6.1.9: nvidia-cublas-cu12*
+DEBUG Adding transitive dependency for nvidia-cusolver-cu12==11.6.1.9: nvidia-cusparse-cu12*
+DEBUG Adding transitive dependency for nvidia-cusolver-cu12==11.6.1.9: nvidia-nvjitlink-cu12*
+DEBUG Searching for a compatible version of nvidia-cusparse-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'} (>=12.3.1.170, <12.3.1.170+)
+DEBUG Selecting: nvidia-cusparse-cu12==12.3.1.170 [compatible] (nvidia_cusparse_cu12-12.3.1.170-py3-none-manylinux2014_aarch64.whl)
+DEBUG Adding transitive dependency for nvidia-cusparse-cu12==12.3.1.170: nvidia-cusparse-cu12==12.3.1.170
+DEBUG Adding transitive dependency for nvidia-cusparse-cu12==12.3.1.170: nvidia-cusparse-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'}==12.3.1.170
+DEBUG Searching for a compatible version of nvidia-cusparse-cu12 (==12.3.1.170)
+DEBUG Selecting: nvidia-cusparse-cu12==12.3.1.170 [compatible] (nvidia_cusparse_cu12-12.3.1.170-py3-none-manylinux2014_aarch64.whl)
+DEBUG Found fresh response for: https://files.pythonhosted.org/packages/2e/a2/313db0453087f5324a5900380ca2e57e050c8de76f407b5e11383dc762ae/nvidia_cusparse_cu12-12.5.7.53-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl.metadata
+DEBUG Found fresh response for: https://files.pythonhosted.org/packages/96/a9/c0d2f83a53d40a4a41be14cea6a0bf9e668ffcf8b004bd65633f433050c0/nvidia_cusparse_cu12-12.3.1.170-py3-none-manylinux2014_aarch64.whl.metadata
+DEBUG Adding transitive dependency for nvidia-cusparse-cu12==12.3.1.170: nvidia-nvjitlink-cu12*
+DEBUG Searching for a compatible version of nvidia-cusparse-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'} (==12.3.1.170)
+DEBUG Selecting: nvidia-cusparse-cu12==12.3.1.170 [compatible] (nvidia_cusparse_cu12-12.3.1.170-py3-none-manylinux2014_aarch64.whl)
+DEBUG Adding transitive dependency for nvidia-cusparse-cu12==12.3.1.170: nvidia-nvjitlink-cu12*
+DEBUG Searching for a compatible version of nvidia-cusparselt-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'} (>=0.6.2, <0.6.2+)
+DEBUG Selecting: nvidia-cusparselt-cu12==0.6.2 [compatible] (nvidia_cusparselt_cu12-0.6.2-py3-none-manylinux2014_aarch64.whl)
+DEBUG Adding transitive dependency for nvidia-cusparselt-cu12==0.6.2: nvidia-cusparselt-cu12==0.6.2
+DEBUG Adding transitive dependency for nvidia-cusparselt-cu12==0.6.2: nvidia-cusparselt-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'}==0.6.2
+DEBUG Searching for a compatible version of nvidia-cusparselt-cu12 (==0.6.2)
+DEBUG Selecting: nvidia-cusparselt-cu12==0.6.2 [compatible] (nvidia_cusparselt_cu12-0.6.2-py3-none-manylinux2014_aarch64.whl)
+DEBUG Found fresh response for: https://files.pythonhosted.org/packages/98/8e/675498726c605c9441cf46653bd29cb1b8666da1fb1469ffa25f67f20c58/nvidia_cusparselt_cu12-0.6.2-py3-none-manylinux2014_aarch64.whl.metadata
+DEBUG Searching for a compatible version of nvidia-cusparselt-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'} (==0.6.2)
+DEBUG Selecting: nvidia-cusparselt-cu12==0.6.2 [compatible] (nvidia_cusparselt_cu12-0.6.2-py3-none-manylinux2014_aarch64.whl)
+DEBUG Searching for a compatible version of nvidia-nccl-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'} (>=2.21.5, <2.21.5+)
+DEBUG Selecting: nvidia-nccl-cu12==2.21.5 [compatible] (nvidia_nccl_cu12-2.21.5-py3-none-manylinux2014_x86_64.whl)
+DEBUG Adding transitive dependency for nvidia-nccl-cu12==2.21.5: nvidia-nccl-cu12==2.21.5
+DEBUG Adding transitive dependency for nvidia-nccl-cu12==2.21.5: nvidia-nccl-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'}==2.21.5
+DEBUG Searching for a compatible version of nvidia-nccl-cu12 (==2.21.5)
+DEBUG Selecting: nvidia-nccl-cu12==2.21.5 [compatible] (nvidia_nccl_cu12-2.21.5-py3-none-manylinux2014_x86_64.whl)
+DEBUG Found fresh response for: https://files.pythonhosted.org/packages/df/99/12cd266d6233f47d00daf3a72739872bdc10267d0383508b0b9c84a18bb6/nvidia_nccl_cu12-2.21.5-py3-none-manylinux2014_x86_64.whl.metadata
+DEBUG Searching for a compatible version of nvidia-nccl-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'} (==2.21.5)
+DEBUG Selecting: nvidia-nccl-cu12==2.21.5 [compatible] (nvidia_nccl_cu12-2.21.5-py3-none-manylinux2014_x86_64.whl)
+DEBUG Searching for a compatible version of nvidia-nvjitlink-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'} (>=12.4.127, <12.4.127+)
+DEBUG Selecting: nvidia-nvjitlink-cu12==12.4.127 [compatible] (nvidia_nvjitlink_cu12-12.4.127-py3-none-manylinux2014_aarch64.whl)
+DEBUG Adding transitive dependency for nvidia-nvjitlink-cu12==12.4.127: nvidia-nvjitlink-cu12==12.4.127
+DEBUG Adding transitive dependency for nvidia-nvjitlink-cu12==12.4.127: nvidia-nvjitlink-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'}==12.4.127
+DEBUG Searching for a compatible version of nvidia-nvjitlink-cu12 (==12.4.127)
+DEBUG Selecting: nvidia-nvjitlink-cu12==12.4.127 [compatible] (nvidia_nvjitlink_cu12-12.4.127-py3-none-manylinux2014_aarch64.whl)
+DEBUG Found fresh response for: https://files.pythonhosted.org/packages/02/45/239d52c05074898a80a900f49b1615d81c07fceadd5ad6c4f86a987c0bc4/nvidia_nvjitlink_cu12-12.4.127-py3-none-manylinux2014_aarch64.whl.metadata
+DEBUG Searching for a compatible version of nvidia-nvjitlink-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'} (==12.4.127)
+DEBUG Selecting: nvidia-nvjitlink-cu12==12.4.127 [compatible] (nvidia_nvjitlink_cu12-12.4.127-py3-none-manylinux2014_aarch64.whl)
+DEBUG Searching for a compatible version of nvidia-nvtx-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'} (>=12.4.127, <12.4.127+)
+DEBUG Selecting: nvidia-nvtx-cu12==12.4.127 [compatible] (nvidia_nvtx_cu12-12.4.127-py3-none-manylinux2014_aarch64.whl)
+DEBUG Adding transitive dependency for nvidia-nvtx-cu12==12.4.127: nvidia-nvtx-cu12==12.4.127
+DEBUG Adding transitive dependency for nvidia-nvtx-cu12==12.4.127: nvidia-nvtx-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'}==12.4.127
+DEBUG Searching for a compatible version of nvidia-nvtx-cu12 (==12.4.127)
+DEBUG Selecting: nvidia-nvtx-cu12==12.4.127 [compatible] (nvidia_nvtx_cu12-12.4.127-py3-none-manylinux2014_aarch64.whl)
+DEBUG Found fresh response for: https://files.pythonhosted.org/packages/06/39/471f581edbb7804b39e8063d92fc8305bdc7a80ae5c07dbe6ea5c50d14a5/nvidia_nvtx_cu12-12.4.127-py3-none-manylinux2014_aarch64.whl.metadata
+DEBUG Searching for a compatible version of nvidia-nvtx-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'} (==12.4.127)
+DEBUG Selecting: nvidia-nvtx-cu12==12.4.127 [compatible] (nvidia_nvtx_cu12-12.4.127-py3-none-manylinux2014_aarch64.whl)
+DEBUG Searching for a compatible version of sympy{python_full_version >= '3.9'} (>=1.13.1, <1.13.1+)
+DEBUG Selecting: sympy==1.13.1 [compatible] (sympy-1.13.1-py3-none-any.whl)
+DEBUG Adding transitive dependency for sympy==1.13.1: sympy==1.13.1
+DEBUG Adding transitive dependency for sympy==1.13.1: sympy{python_full_version >= '3.9'}==1.13.1
+DEBUG Searching for a compatible version of sympy (==1.13.1)
+DEBUG Selecting: sympy==1.13.1 [compatible] (sympy-1.13.1-py3-none-any.whl)
+DEBUG Found fresh response for: https://files.pythonhosted.org/packages/b2/fe/81695a1aa331a842b582453b605175f419fe8540355886031328089d840a/sympy-1.13.1-py3-none-any.whl.metadata
+DEBUG Adding transitive dependency for sympy==1.13.1: mpmath>=1.1.0, <1.4
+DEBUG Searching for a compatible version of sympy{python_full_version >= '3.9'} (==1.13.1)
+DEBUG Selecting: sympy==1.13.1 [compatible] (sympy-1.13.1-py3-none-any.whl)
+DEBUG Adding transitive dependency for sympy==1.13.1: mpmath>=1.1.0, <1.4
+DEBUG Searching for a compatible version of triton{platform_machine == 'x86_64' and sys_platform == 'linux'} (>=3.2.0, <3.2.0+)
+DEBUG Selecting: triton==3.2.0 [compatible] (triton-3.2.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl)
+DEBUG Adding transitive dependency for triton==3.2.0: triton==3.2.0
+DEBUG Adding transitive dependency for triton==3.2.0: triton{platform_machine == 'x86_64' and sys_platform == 'linux'}==3.2.0
+DEBUG Searching for a compatible version of triton (==3.2.0)
+DEBUG Selecting: triton==3.2.0 [compatible] (triton-3.2.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl)
+DEBUG Found fresh response for: https://files.pythonhosted.org/packages/06/00/59500052cb1cf8cf5316be93598946bc451f14072c6ff256904428eaf03c/triton-3.2.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata
+DEBUG Found stale response for: https://pypi.org/simple/mpmath/
+DEBUG Sending revalidation request for: https://pypi.org/simple/mpmath/
+DEBUG Searching for a compatible version of triton{platform_machine == 'x86_64' and sys_platform == 'linux'} (==3.2.0)
+DEBUG Selecting: triton==3.2.0 [compatible] (triton-3.2.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl)
+DEBUG Searching for a compatible version of filelock (*)
+DEBUG Selecting: filelock==3.17.0 [compatible] (filelock-3.17.0-py3-none-any.whl)
+DEBUG Searching for a compatible version of fsspec (*)
+DEBUG Selecting: fsspec==2025.2.0 [compatible] (fsspec-2025.2.0-py3-none-any.whl)
+DEBUG Searching for a compatible version of jinja2 (*)
+DEBUG Selecting: jinja2==3.1.5 [compatible] (jinja2-3.1.5-py3-none-any.whl)
+DEBUG Adding transitive dependency for jinja2==3.1.5: markupsafe>=2.0
+DEBUG Searching for a compatible version of networkx (*)
+DEBUG Selecting: networkx==3.4.2 [compatible] (networkx-3.4.2-py3-none-any.whl)
+DEBUG Searching for a compatible version of setuptools{python_full_version >= '3.12'} (*)
+DEBUG Selecting: setuptools==75.8.0 [compatible] (setuptools-75.8.0-py3-none-any.whl)
+DEBUG Adding transitive dependency for setuptools==75.8.0: setuptools==75.8.0
+DEBUG Adding transitive dependency for setuptools==75.8.0: setuptools{python_full_version >= '3.12'}==75.8.0
+DEBUG Searching for a compatible version of setuptools (==75.8.0)
+DEBUG Selecting: setuptools==75.8.0 [compatible] (setuptools-75.8.0-py3-none-any.whl)
+DEBUG Found fresh response for: https://files.pythonhosted.org/packages/69/8a/b9dc7678803429e4a3bc9ba462fa3dd9066824d3c607490235c6a796be5a/setuptools-75.8.0-py3-none-any.whl.metadata
+DEBUG Searching for a compatible version of setuptools{python_full_version >= '3.12'} (==75.8.0)
+DEBUG Selecting: setuptools==75.8.0 [compatible] (setuptools-75.8.0-py3-none-any.whl)
+DEBUG Searching for a compatible version of typing-extensions (>=4.10.0)
+DEBUG Selecting: typing-extensions==4.12.2 [compatible] (typing_extensions-4.12.2-py3-none-any.whl)
+DEBUG Found stale response for: https://pypi.org/simple/markupsafe/
+DEBUG Sending revalidation request for: https://pypi.org/simple/markupsafe/
+DEBUG Found not-modified response for: https://pypi.org/simple/mpmath/
+DEBUG Searching for a compatible version of mpmath (>=1.1.0, <1.4)
+DEBUG Selecting: mpmath==1.3.0 [compatible] (mpmath-1.3.0-py3-none-any.whl)
+DEBUG Found fresh response for: https://files.pythonhosted.org/packages/43/e3/7d92a15f894aa0c9c4b49b8ee9ac9850d6e63b03c9c32c0367a13ae62209/mpmath-1.3.0-py3-none-any.whl.metadata
+DEBUG Found not-modified response for: https://pypi.org/simple/markupsafe/
+DEBUG Searching for a compatible version of markupsafe (>=2.0)
+DEBUG Selecting: markupsafe==3.0.2 [compatible] (MarkupSafe-3.0.2-cp312-cp312-macosx_10_13_universal2.whl)
+DEBUG Found fresh response for: https://files.pythonhosted.org/packages/22/09/d1f21434c97fc42f09d290cbb6350d44eb12f09cc62c9476effdb33a18aa/MarkupSafe-3.0.2-cp312-cp312-macosx_10_13_universal2.whl.metadata
+DEBUG Tried 25 versions: filelock 1, fsspec 1, jinja2 1, markupsafe 1, mpmath 1, networkx 1, nvidia-cublas-cu12 1, nvidia-cuda-cupti-cu12 1, nvidia-cuda-nvrtc-cu12 1, nvidia-cuda-runtime-cu12 1, nvidia-cudnn-cu12 1, nvidia-cufft-cu12 1, nvidia-curand-cu12 1, nvidia-cusolver-cu12 1, nvidia-cusparse-cu12 1, nvidia-cusparselt-cu12 1, nvidia-nccl-cu12 1, nvidia-nvjitlink-cu12 1, nvidia-nvtx-cu12 1, setuptools 1, sympy 1, torch 1, triton 1, typing-extensions 1, uv-install-pytorch 1
+DEBUG all marker environments resolution took 0.161s
+Resolved 25 packages in 164ms
+DEBUG Using request timeout of 30s
+DEBUG Found static `pyproject.toml` for: uv-install-pytorch @ file:///home/oliverkillane/files/bug-reports/uv-install-pytorch
+DEBUG No workspace root found, using project root
+DEBUG Ignoring existing lockfile due to mismatched requirements for: `uv-install-pytorch==0.1.0`
+  Requested: {Requirement { name: PackageName("torch"), extras: [], groups: [], marker: true, source: Registry { specifier: VersionSpecifiers([VersionSpecifier { operator: GreaterThanEqual, version: "2.6.0" }]), index: None, conflict: None }, origin: None }}
+  Existing: {Requirement { name: PackageName("torch"), extras: [], groups: [], marker: true, source: Registry { specifier: VersionSpecifiers([]), index: None, conflict: None }, origin: None }}
+DEBUG Solving with installed Python version: 3.12.8
+DEBUG Solving with target Python version: >=3.12
+DEBUG Adding direct dependency: uv-install-pytorch*
+DEBUG Searching for a compatible version of uv-install-pytorch @ file:///home/oliverkillane/files/bug-reports/uv-install-pytorch (*)
+DEBUG Adding direct dependency: torch>=2.6.0
+DEBUG Searching for a compatible version of torch (>=2.6.0)
+DEBUG Selecting: torch==2.6.0 [preference] (torch-2.6.0-cp312-cp312-manylinux1_x86_64.whl)
+DEBUG Adding transitive dependency for torch==2.6.0: filelock*
+DEBUG Adding transitive dependency for torch==2.6.0: fsspec*
+DEBUG Adding transitive dependency for torch==2.6.0: jinja2*
+DEBUG Adding transitive dependency for torch==2.6.0: networkx*
+DEBUG Adding transitive dependency for torch==2.6.0: nvidia-cublas-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'}>=12.4.5.8, <12.4.5.8+
+DEBUG Adding transitive dependency for torch==2.6.0: nvidia-cuda-cupti-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'}>=12.4.127, <12.4.127+
+DEBUG Adding transitive dependency for torch==2.6.0: nvidia-cuda-nvrtc-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'}>=12.4.127, <12.4.127+
+DEBUG Adding transitive dependency for torch==2.6.0: nvidia-cuda-runtime-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'}>=12.4.127, <12.4.127+
+DEBUG Adding transitive dependency for torch==2.6.0: nvidia-cudnn-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'}>=9.1.0.70, <9.1.0.70+
+DEBUG Adding transitive dependency for torch==2.6.0: nvidia-cufft-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'}>=11.2.1.3, <11.2.1.3+
+DEBUG Adding transitive dependency for torch==2.6.0: nvidia-curand-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'}>=10.3.5.147, <10.3.5.147+
+DEBUG Adding transitive dependency for torch==2.6.0: nvidia-cusolver-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'}>=11.6.1.9, <11.6.1.9+
+DEBUG Adding transitive dependency for torch==2.6.0: nvidia-cusparse-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'}>=12.3.1.170, <12.3.1.170+
+DEBUG Adding transitive dependency for torch==2.6.0: nvidia-cusparselt-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'}>=0.6.2, <0.6.2+
+DEBUG Adding transitive dependency for torch==2.6.0: nvidia-nccl-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'}>=2.21.5, <2.21.5+
+DEBUG Adding transitive dependency for torch==2.6.0: nvidia-nvjitlink-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'}>=12.4.127, <12.4.127+
+DEBUG Adding transitive dependency for torch==2.6.0: nvidia-nvtx-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'}>=12.4.127, <12.4.127+
+DEBUG Adding transitive dependency for torch==2.6.0: setuptools{python_full_version >= '3.12'}*
+DEBUG Adding transitive dependency for torch==2.6.0: sympy{python_full_version >= '3.9'}>=1.13.1, <1.13.1+
+DEBUG Adding transitive dependency for torch==2.6.0: triton{platform_machine == 'x86_64' and sys_platform == 'linux'}>=3.2.0, <3.2.0+
+DEBUG Adding transitive dependency for torch==2.6.0: typing-extensions>=4.10.0
+DEBUG Searching for a compatible version of nvidia-cublas-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'} (>=12.4.5.8, <12.4.5.8+)
+DEBUG Selecting: nvidia-cublas-cu12==12.4.5.8 [preference] (nvidia_cublas_cu12-12.4.5.8-py3-none-manylinux2014_aarch64.whl)
+DEBUG Adding transitive dependency for nvidia-cublas-cu12==12.4.5.8: nvidia-cublas-cu12==12.4.5.8
+DEBUG Adding transitive dependency for nvidia-cublas-cu12==12.4.5.8: nvidia-cublas-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'}==12.4.5.8
+DEBUG Searching for a compatible version of nvidia-cublas-cu12 (==12.4.5.8)
+DEBUG Selecting: nvidia-cublas-cu12==12.4.5.8 [preference] (nvidia_cublas_cu12-12.4.5.8-py3-none-manylinux2014_aarch64.whl)
+DEBUG Searching for a compatible version of nvidia-cublas-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'} (==12.4.5.8)
+DEBUG Selecting: nvidia-cublas-cu12==12.4.5.8 [preference] (nvidia_cublas_cu12-12.4.5.8-py3-none-manylinux2014_aarch64.whl)
+DEBUG Searching for a compatible version of nvidia-cuda-cupti-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'} (>=12.4.127, <12.4.127+)
+DEBUG Selecting: nvidia-cuda-cupti-cu12==12.4.127 [preference] (nvidia_cuda_cupti_cu12-12.4.127-py3-none-manylinux2014_aarch64.whl)
+DEBUG Adding transitive dependency for nvidia-cuda-cupti-cu12==12.4.127: nvidia-cuda-cupti-cu12==12.4.127
+DEBUG Adding transitive dependency for nvidia-cuda-cupti-cu12==12.4.127: nvidia-cuda-cupti-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'}==12.4.127
+DEBUG Searching for a compatible version of nvidia-cuda-cupti-cu12 (==12.4.127)
+DEBUG Selecting: nvidia-cuda-cupti-cu12==12.4.127 [preference] (nvidia_cuda_cupti_cu12-12.4.127-py3-none-manylinux2014_aarch64.whl)
+DEBUG Searching for a compatible version of nvidia-cuda-cupti-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'} (==12.4.127)
+DEBUG Selecting: nvidia-cuda-cupti-cu12==12.4.127 [preference] (nvidia_cuda_cupti_cu12-12.4.127-py3-none-manylinux2014_aarch64.whl)
+DEBUG Searching for a compatible version of nvidia-cuda-nvrtc-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'} (>=12.4.127, <12.4.127+)
+DEBUG Selecting: nvidia-cuda-nvrtc-cu12==12.4.127 [preference] (nvidia_cuda_nvrtc_cu12-12.4.127-py3-none-manylinux2014_aarch64.whl)
+DEBUG Adding transitive dependency for nvidia-cuda-nvrtc-cu12==12.4.127: nvidia-cuda-nvrtc-cu12==12.4.127
+DEBUG Adding transitive dependency for nvidia-cuda-nvrtc-cu12==12.4.127: nvidia-cuda-nvrtc-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'}==12.4.127
+DEBUG Searching for a compatible version of nvidia-cuda-nvrtc-cu12 (==12.4.127)
+DEBUG Selecting: nvidia-cuda-nvrtc-cu12==12.4.127 [preference] (nvidia_cuda_nvrtc_cu12-12.4.127-py3-none-manylinux2014_aarch64.whl)
+DEBUG Searching for a compatible version of nvidia-cuda-nvrtc-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'} (==12.4.127)
+DEBUG Selecting: nvidia-cuda-nvrtc-cu12==12.4.127 [preference] (nvidia_cuda_nvrtc_cu12-12.4.127-py3-none-manylinux2014_aarch64.whl)
+DEBUG Searching for a compatible version of nvidia-cuda-runtime-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'} (>=12.4.127, <12.4.127+)
+DEBUG Selecting: nvidia-cuda-runtime-cu12==12.4.127 [preference] (nvidia_cuda_runtime_cu12-12.4.127-py3-none-manylinux2014_aarch64.whl)
+DEBUG Adding transitive dependency for nvidia-cuda-runtime-cu12==12.4.127: nvidia-cuda-runtime-cu12==12.4.127
+DEBUG Adding transitive dependency for nvidia-cuda-runtime-cu12==12.4.127: nvidia-cuda-runtime-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'}==12.4.127
+DEBUG Searching for a compatible version of nvidia-cuda-runtime-cu12 (==12.4.127)
+DEBUG Selecting: nvidia-cuda-runtime-cu12==12.4.127 [preference] (nvidia_cuda_runtime_cu12-12.4.127-py3-none-manylinux2014_aarch64.whl)
+DEBUG Searching for a compatible version of nvidia-cuda-runtime-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'} (==12.4.127)
+DEBUG Selecting: nvidia-cuda-runtime-cu12==12.4.127 [preference] (nvidia_cuda_runtime_cu12-12.4.127-py3-none-manylinux2014_aarch64.whl)
+DEBUG Searching for a compatible version of nvidia-cudnn-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'} (>=9.1.0.70, <9.1.0.70+)
+DEBUG Selecting: nvidia-cudnn-cu12==9.1.0.70 [preference] (nvidia_cudnn_cu12-9.1.0.70-py3-none-manylinux2014_x86_64.whl)
+DEBUG Adding transitive dependency for nvidia-cudnn-cu12==9.1.0.70: nvidia-cudnn-cu12==9.1.0.70
+DEBUG Adding transitive dependency for nvidia-cudnn-cu12==9.1.0.70: nvidia-cudnn-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'}==9.1.0.70
+DEBUG Searching for a compatible version of nvidia-cudnn-cu12 (==9.1.0.70)
+DEBUG Selecting: nvidia-cudnn-cu12==9.1.0.70 [preference] (nvidia_cudnn_cu12-9.1.0.70-py3-none-manylinux2014_x86_64.whl)
+DEBUG Adding transitive dependency for nvidia-cudnn-cu12==9.1.0.70: nvidia-cublas-cu12*
+DEBUG Searching for a compatible version of nvidia-cudnn-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'} (==9.1.0.70)
+DEBUG Selecting: nvidia-cudnn-cu12==9.1.0.70 [preference] (nvidia_cudnn_cu12-9.1.0.70-py3-none-manylinux2014_x86_64.whl)
+DEBUG Adding transitive dependency for nvidia-cudnn-cu12==9.1.0.70: nvidia-cublas-cu12*
+DEBUG Searching for a compatible version of nvidia-cufft-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'} (>=11.2.1.3, <11.2.1.3+)
+DEBUG Selecting: nvidia-cufft-cu12==11.2.1.3 [preference] (nvidia_cufft_cu12-11.2.1.3-py3-none-manylinux2014_aarch64.whl)
+DEBUG Adding transitive dependency for nvidia-cufft-cu12==11.2.1.3: nvidia-cufft-cu12==11.2.1.3
+DEBUG Adding transitive dependency for nvidia-cufft-cu12==11.2.1.3: nvidia-cufft-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'}==11.2.1.3
+DEBUG Searching for a compatible version of nvidia-cufft-cu12 (==11.2.1.3)
+DEBUG Selecting: nvidia-cufft-cu12==11.2.1.3 [preference] (nvidia_cufft_cu12-11.2.1.3-py3-none-manylinux2014_aarch64.whl)
+DEBUG Adding transitive dependency for nvidia-cufft-cu12==11.2.1.3: nvidia-nvjitlink-cu12*
+DEBUG Searching for a compatible version of nvidia-cufft-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'} (==11.2.1.3)
+DEBUG Selecting: nvidia-cufft-cu12==11.2.1.3 [preference] (nvidia_cufft_cu12-11.2.1.3-py3-none-manylinux2014_aarch64.whl)
+DEBUG Adding transitive dependency for nvidia-cufft-cu12==11.2.1.3: nvidia-nvjitlink-cu12*
+DEBUG Searching for a compatible version of nvidia-curand-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'} (>=10.3.5.147, <10.3.5.147+)
+DEBUG Selecting: nvidia-curand-cu12==10.3.5.147 [preference] (nvidia_curand_cu12-10.3.5.147-py3-none-manylinux2014_aarch64.whl)
+DEBUG Adding transitive dependency for nvidia-curand-cu12==10.3.5.147: nvidia-curand-cu12==10.3.5.147
+DEBUG Adding transitive dependency for nvidia-curand-cu12==10.3.5.147: nvidia-curand-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'}==10.3.5.147
+DEBUG Searching for a compatible version of nvidia-curand-cu12 (==10.3.5.147)
+DEBUG Selecting: nvidia-curand-cu12==10.3.5.147 [preference] (nvidia_curand_cu12-10.3.5.147-py3-none-manylinux2014_aarch64.whl)
+DEBUG Searching for a compatible version of nvidia-curand-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'} (==10.3.5.147)
+DEBUG Selecting: nvidia-curand-cu12==10.3.5.147 [preference] (nvidia_curand_cu12-10.3.5.147-py3-none-manylinux2014_aarch64.whl)
+DEBUG Searching for a compatible version of nvidia-cusolver-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'} (>=11.6.1.9, <11.6.1.9+)
+DEBUG Selecting: nvidia-cusolver-cu12==11.6.1.9 [preference] (nvidia_cusolver_cu12-11.6.1.9-py3-none-manylinux2014_aarch64.whl)
+DEBUG Adding transitive dependency for nvidia-cusolver-cu12==11.6.1.9: nvidia-cusolver-cu12==11.6.1.9
+DEBUG Adding transitive dependency for nvidia-cusolver-cu12==11.6.1.9: nvidia-cusolver-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'}==11.6.1.9
+DEBUG Searching for a compatible version of nvidia-cusolver-cu12 (==11.6.1.9)
+DEBUG Selecting: nvidia-cusolver-cu12==11.6.1.9 [preference] (nvidia_cusolver_cu12-11.6.1.9-py3-none-manylinux2014_aarch64.whl)
+DEBUG Adding transitive dependency for nvidia-cusolver-cu12==11.6.1.9: nvidia-cublas-cu12*
+DEBUG Adding transitive dependency for nvidia-cusolver-cu12==11.6.1.9: nvidia-cusparse-cu12*
+DEBUG Adding transitive dependency for nvidia-cusolver-cu12==11.6.1.9: nvidia-nvjitlink-cu12*
+DEBUG Searching for a compatible version of nvidia-cusolver-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'} (==11.6.1.9)
+DEBUG Selecting: nvidia-cusolver-cu12==11.6.1.9 [preference] (nvidia_cusolver_cu12-11.6.1.9-py3-none-manylinux2014_aarch64.whl)
+DEBUG Adding transitive dependency for nvidia-cusolver-cu12==11.6.1.9: nvidia-cublas-cu12*
+DEBUG Adding transitive dependency for nvidia-cusolver-cu12==11.6.1.9: nvidia-cusparse-cu12*
+DEBUG Adding transitive dependency for nvidia-cusolver-cu12==11.6.1.9: nvidia-nvjitlink-cu12*
+DEBUG Searching for a compatible version of nvidia-cusparse-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'} (>=12.3.1.170, <12.3.1.170+)
+DEBUG Selecting: nvidia-cusparse-cu12==12.3.1.170 [preference] (nvidia_cusparse_cu12-12.3.1.170-py3-none-manylinux2014_aarch64.whl)
+DEBUG Adding transitive dependency for nvidia-cusparse-cu12==12.3.1.170: nvidia-cusparse-cu12==12.3.1.170
+DEBUG Adding transitive dependency for nvidia-cusparse-cu12==12.3.1.170: nvidia-cusparse-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'}==12.3.1.170
+DEBUG Searching for a compatible version of nvidia-cusparse-cu12 (==12.3.1.170)
+DEBUG Selecting: nvidia-cusparse-cu12==12.3.1.170 [preference] (nvidia_cusparse_cu12-12.3.1.170-py3-none-manylinux2014_aarch64.whl)
+DEBUG Adding transitive dependency for nvidia-cusparse-cu12==12.3.1.170: nvidia-nvjitlink-cu12*
+DEBUG Searching for a compatible version of nvidia-cusparse-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'} (==12.3.1.170)
+DEBUG Selecting: nvidia-cusparse-cu12==12.3.1.170 [preference] (nvidia_cusparse_cu12-12.3.1.170-py3-none-manylinux2014_aarch64.whl)
+DEBUG Adding transitive dependency for nvidia-cusparse-cu12==12.3.1.170: nvidia-nvjitlink-cu12*
+DEBUG Searching for a compatible version of nvidia-cusparselt-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'} (>=0.6.2, <0.6.2+)
+DEBUG Selecting: nvidia-cusparselt-cu12==0.6.2 [preference] (nvidia_cusparselt_cu12-0.6.2-py3-none-manylinux2014_aarch64.whl)
+DEBUG Adding transitive dependency for nvidia-cusparselt-cu12==0.6.2: nvidia-cusparselt-cu12==0.6.2
+DEBUG Adding transitive dependency for nvidia-cusparselt-cu12==0.6.2: nvidia-cusparselt-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'}==0.6.2
+DEBUG Searching for a compatible version of nvidia-cusparselt-cu12 (==0.6.2)
+DEBUG Selecting: nvidia-cusparselt-cu12==0.6.2 [preference] (nvidia_cusparselt_cu12-0.6.2-py3-none-manylinux2014_aarch64.whl)
+DEBUG Searching for a compatible version of nvidia-cusparselt-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'} (==0.6.2)
+DEBUG Selecting: nvidia-cusparselt-cu12==0.6.2 [preference] (nvidia_cusparselt_cu12-0.6.2-py3-none-manylinux2014_aarch64.whl)
+DEBUG Searching for a compatible version of nvidia-nccl-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'} (>=2.21.5, <2.21.5+)
+DEBUG Selecting: nvidia-nccl-cu12==2.21.5 [preference] (nvidia_nccl_cu12-2.21.5-py3-none-manylinux2014_x86_64.whl)
+DEBUG Adding transitive dependency for nvidia-nccl-cu12==2.21.5: nvidia-nccl-cu12==2.21.5
+DEBUG Adding transitive dependency for nvidia-nccl-cu12==2.21.5: nvidia-nccl-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'}==2.21.5
+DEBUG Searching for a compatible version of nvidia-nccl-cu12 (==2.21.5)
+DEBUG Selecting: nvidia-nccl-cu12==2.21.5 [preference] (nvidia_nccl_cu12-2.21.5-py3-none-manylinux2014_x86_64.whl)
+DEBUG Searching for a compatible version of nvidia-nccl-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'} (==2.21.5)
+DEBUG Selecting: nvidia-nccl-cu12==2.21.5 [preference] (nvidia_nccl_cu12-2.21.5-py3-none-manylinux2014_x86_64.whl)
+DEBUG Searching for a compatible version of nvidia-nvjitlink-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'} (>=12.4.127, <12.4.127+)
+DEBUG Selecting: nvidia-nvjitlink-cu12==12.4.127 [preference] (nvidia_nvjitlink_cu12-12.4.127-py3-none-manylinux2014_aarch64.whl)
+DEBUG Adding transitive dependency for nvidia-nvjitlink-cu12==12.4.127: nvidia-nvjitlink-cu12==12.4.127
+DEBUG Adding transitive dependency for nvidia-nvjitlink-cu12==12.4.127: nvidia-nvjitlink-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'}==12.4.127
+DEBUG Searching for a compatible version of nvidia-nvjitlink-cu12 (==12.4.127)
+DEBUG Selecting: nvidia-nvjitlink-cu12==12.4.127 [preference] (nvidia_nvjitlink_cu12-12.4.127-py3-none-manylinux2014_aarch64.whl)
+DEBUG Searching for a compatible version of nvidia-nvjitlink-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'} (==12.4.127)
+DEBUG Selecting: nvidia-nvjitlink-cu12==12.4.127 [preference] (nvidia_nvjitlink_cu12-12.4.127-py3-none-manylinux2014_aarch64.whl)
+DEBUG Searching for a compatible version of nvidia-nvtx-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'} (>=12.4.127, <12.4.127+)
+DEBUG Selecting: nvidia-nvtx-cu12==12.4.127 [preference] (nvidia_nvtx_cu12-12.4.127-py3-none-manylinux2014_aarch64.whl)
+DEBUG Adding transitive dependency for nvidia-nvtx-cu12==12.4.127: nvidia-nvtx-cu12==12.4.127
+DEBUG Adding transitive dependency for nvidia-nvtx-cu12==12.4.127: nvidia-nvtx-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'}==12.4.127
+DEBUG Searching for a compatible version of nvidia-nvtx-cu12 (==12.4.127)
+DEBUG Selecting: nvidia-nvtx-cu12==12.4.127 [preference] (nvidia_nvtx_cu12-12.4.127-py3-none-manylinux2014_aarch64.whl)
+DEBUG Searching for a compatible version of nvidia-nvtx-cu12{platform_machine == 'x86_64' and sys_platform == 'linux'} (==12.4.127)
+DEBUG Selecting: nvidia-nvtx-cu12==12.4.127 [preference] (nvidia_nvtx_cu12-12.4.127-py3-none-manylinux2014_aarch64.whl)
+DEBUG Searching for a compatible version of sympy{python_full_version >= '3.9'} (>=1.13.1, <1.13.1+)
+DEBUG Selecting: sympy==1.13.1 [preference] (sympy-1.13.1-py3-none-any.whl)
+DEBUG Adding transitive dependency for sympy==1.13.1: sympy==1.13.1
+DEBUG Adding transitive dependency for sympy==1.13.1: sympy{python_full_version >= '3.9'}==1.13.1
+DEBUG Searching for a compatible version of sympy (==1.13.1)
+DEBUG Selecting: sympy==1.13.1 [preference] (sympy-1.13.1-py3-none-any.whl)
+DEBUG Adding transitive dependency for sympy==1.13.1: mpmath>=1.1.0, <1.4
+DEBUG Searching for a compatible version of sympy{python_full_version >= '3.9'} (==1.13.1)
+DEBUG Selecting: sympy==1.13.1 [preference] (sympy-1.13.1-py3-none-any.whl)
+DEBUG Adding transitive dependency for sympy==1.13.1: mpmath>=1.1.0, <1.4
+DEBUG Searching for a compatible version of triton{platform_machine == 'x86_64' and sys_platform == 'linux'} (>=3.2.0, <3.2.0+)
+DEBUG Selecting: triton==3.2.0 [preference] (triton-3.2.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl)
+DEBUG Adding transitive dependency for triton==3.2.0: triton==3.2.0
+DEBUG Adding transitive dependency for triton==3.2.0: triton{platform_machine == 'x86_64' and sys_platform == 'linux'}==3.2.0
+DEBUG Searching for a compatible version of triton (==3.2.0)
+DEBUG Selecting: triton==3.2.0 [preference] (triton-3.2.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl)
+DEBUG Searching for a compatible version of triton{platform_machine == 'x86_64' and sys_platform == 'linux'} (==3.2.0)
+DEBUG Selecting: triton==3.2.0 [preference] (triton-3.2.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl)
+DEBUG Searching for a compatible version of filelock (*)
+DEBUG Selecting: filelock==3.17.0 [preference] (filelock-3.17.0-py3-none-any.whl)
+DEBUG Searching for a compatible version of fsspec (*)
+DEBUG Selecting: fsspec==2025.2.0 [preference] (fsspec-2025.2.0-py3-none-any.whl)
+DEBUG Searching for a compatible version of jinja2 (*)
+DEBUG Selecting: jinja2==3.1.5 [preference] (jinja2-3.1.5-py3-none-any.whl)
+DEBUG Adding transitive dependency for jinja2==3.1.5: markupsafe>=2.0
+DEBUG Searching for a compatible version of networkx (*)
+DEBUG Selecting: networkx==3.4.2 [preference] (networkx-3.4.2-py3-none-any.whl)
+DEBUG Searching for a compatible version of setuptools{python_full_version >= '3.12'} (*)
+DEBUG Selecting: setuptools==75.8.0 [preference] (setuptools-75.8.0-py3-none-any.whl)
+DEBUG Adding transitive dependency for setuptools==75.8.0: setuptools==75.8.0
+DEBUG Adding transitive dependency for setuptools==75.8.0: setuptools{python_full_version >= '3.12'}==75.8.0
+DEBUG Searching for a compatible version of setuptools (==75.8.0)
+DEBUG Selecting: setuptools==75.8.0 [preference] (setuptools-75.8.0-py3-none-any.whl)
+DEBUG Searching for a compatible version of setuptools{python_full_version >= '3.12'} (==75.8.0)
+DEBUG Selecting: setuptools==75.8.0 [preference] (setuptools-75.8.0-py3-none-any.whl)
+DEBUG Searching for a compatible version of typing-extensions (>=4.10.0)
+DEBUG Selecting: typing-extensions==4.12.2 [preference] (typing_extensions-4.12.2-py3-none-any.whl)
+DEBUG Searching for a compatible version of mpmath (>=1.1.0, <1.4)
+DEBUG Selecting: mpmath==1.3.0 [preference] (mpmath-1.3.0-py3-none-any.whl)
+DEBUG Searching for a compatible version of markupsafe (>=2.0)
+DEBUG Selecting: markupsafe==3.0.2 [preference] (MarkupSafe-3.0.2-cp312-cp312-macosx_10_13_universal2.whl)
+DEBUG Tried 25 versions: filelock 1, fsspec 1, jinja2 1, markupsafe 1, mpmath 1, networkx 1, nvidia-cublas-cu12 1, nvidia-cuda-cupti-cu12 1, nvidia-cuda-nvrtc-cu12 1, nvidia-cuda-runtime-cu12 1, nvidia-cudnn-cu12 1, nvidia-cufft-cu12 1, nvidia-curand-cu12 1, nvidia-cusolver-cu12 1, nvidia-cusparse-cu12 1, nvidia-cusparselt-cu12 1, nvidia-nccl-cu12 1, nvidia-nvjitlink-cu12 1, nvidia-nvtx-cu12 1, setuptools 1, sympy 1, torch 1, triton 1, typing-extensions 1, uv-install-pytorch 1
+DEBUG all marker environments resolution took 0.003s
+DEBUG Using request timeout of 30s
+DEBUG Identified uncached distribution: torch==2.6.0
+DEBUG Requirement already cached: filelock==3.17.0
+DEBUG Requirement already cached: fsspec==2025.2.0
+DEBUG Requirement already cached: jinja2==3.1.5
+DEBUG Requirement already cached: networkx==3.4.2
+DEBUG Identified uncached distribution: nvidia-cublas-cu12==12.4.5.8
+DEBUG Requirement already cached: nvidia-cuda-cupti-cu12==12.4.127
+DEBUG Requirement already cached: nvidia-cuda-nvrtc-cu12==12.4.127
+DEBUG Requirement already cached: nvidia-cuda-runtime-cu12==12.4.127
+DEBUG Identified uncached distribution: nvidia-cudnn-cu12==9.1.0.70
+DEBUG Identified uncached distribution: nvidia-cufft-cu12==11.2.1.3
+DEBUG Requirement already cached: nvidia-curand-cu12==10.3.5.147
+DEBUG Identified uncached distribution: nvidia-cusolver-cu12==11.6.1.9
+DEBUG Identified uncached distribution: nvidia-cusparse-cu12==12.3.1.170
+DEBUG Identified uncached distribution: nvidia-cusparselt-cu12==0.6.2
+DEBUG Identified uncached distribution: nvidia-nccl-cu12==2.21.5
+DEBUG Requirement already cached: nvidia-nvjitlink-cu12==12.4.127
+DEBUG Requirement already cached: nvidia-nvtx-cu12==12.4.127
+DEBUG Requirement already cached: setuptools==75.8.0
+DEBUG Requirement already cached: sympy==1.13.1
+DEBUG Identified uncached distribution: triton==3.2.0
+DEBUG Requirement already cached: typing-extensions==4.12.2
+DEBUG Requirement already cached: markupsafe==3.0.2
+DEBUG Requirement already cached: mpmath==1.3.0
+DEBUG No cache entry for: https://files.pythonhosted.org/packages/e5/35/0c52d708144c2deb595cd22819a609f78fdd699b95ff6f0ebcd456e3c7c1/torch-2.6.0-cp312-cp312-manylinux1_x86_64.whl
+DEBUG No cache entry for: https://files.pythonhosted.org/packages/9f/fd/713452cd72343f682b1c7b9321e23829f00b842ceaedcda96e742ea0b0b3/nvidia_cudnn_cu12-9.1.0.70-py3-none-manylinux2014_x86_64.whl
+DEBUG No cache entry for: https://files.pythonhosted.org/packages/ae/71/1c91302526c45ab494c23f61c7a84aa568b8c1f9d196efa5993957faf906/nvidia_cublas_cu12-12.4.5.8-py3-none-manylinux2014_x86_64.whl
+DEBUG No cache entry for: https://files.pythonhosted.org/packages/06/00/59500052cb1cf8cf5316be93598946bc451f14072c6ff256904428eaf03c/triton-3.2.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+DEBUG No cache entry for: https://files.pythonhosted.org/packages/27/94/3266821f65b92b3138631e9c8e7fe1fb513804ac934485a8d05776e1dd43/nvidia_cufft_cu12-11.2.1.3-py3-none-manylinux2014_x86_64.whl
+DEBUG No cache entry for: https://files.pythonhosted.org/packages/db/f7/97a9ea26ed4bbbfc2d470994b8b4f338ef663be97b8f677519ac195e113d/nvidia_cusparse_cu12-12.3.1.170-py3-none-manylinux2014_x86_64.whl
+DEBUG No cache entry for: https://files.pythonhosted.org/packages/df/99/12cd266d6233f47d00daf3a72739872bdc10267d0383508b0b9c84a18bb6/nvidia_nccl_cu12-2.21.5-py3-none-manylinux2014_x86_64.whl
+DEBUG No cache entry for: https://files.pythonhosted.org/packages/78/a8/bcbb63b53a4b1234feeafb65544ee55495e1bb37ec31b999b963cbccfd1d/nvidia_cusparselt_cu12-0.6.2-py3-none-manylinux2014_x86_64.whl
+DEBUG No cache entry for: https://files.pythonhosted.org/packages/3a/e1/5b9089a4b2a4790dfdea8b3a006052cfecff58139d5a4e34cb1a51df8d6f/nvidia_cusolver_cu12-11.6.1.9-py3-none-manylinux2014_x86_64.whl
+WARN Streaming failed for nvidia-cublas-cu12==12.4.5.8; downloading wheel to disk (error decoding response body)
+WARN Streaming failed for nvidia-cusolver-cu12==11.6.1.9; downloading wheel to disk (error decoding response body)
+WARN Streaming failed for nvidia-cusparselt-cu12==0.6.2; downloading wheel to disk (error decoding response body)
+WARN Streaming failed for nvidia-nccl-cu12==2.21.5; downloading wheel to disk (error decoding response body)
+WARN Streaming failed for nvidia-cusparse-cu12==12.3.1.170; downloading wheel to disk (error decoding response body)
+WARN Streaming failed for nvidia-cufft-cu12==11.2.1.3; downloading wheel to disk (error decoding response body)
+WARN Streaming failed for triton==3.2.0; downloading wheel to disk (error decoding response body)
+WARN Streaming failed for nvidia-cudnn-cu12==9.1.0.70; downloading wheel to disk (error decoding response body)
+WARN Streaming failed for torch==2.6.0; downloading wheel to disk (error decoding response body)
+DEBUG No cache entry for: https://files.pythonhosted.org/packages/ae/71/1c91302526c45ab494c23f61c7a84aa568b8c1f9d196efa5993957faf906/nvidia_cublas_cu12-12.4.5.8-py3-none-manylinux2014_x86_64.whl
+DEBUG No cache entry for: https://files.pythonhosted.org/packages/3a/e1/5b9089a4b2a4790dfdea8b3a006052cfecff58139d5a4e34cb1a51df8d6f/nvidia_cusolver_cu12-11.6.1.9-py3-none-manylinux2014_x86_64.whl
+DEBUG No cache entry for: https://files.pythonhosted.org/packages/78/a8/bcbb63b53a4b1234feeafb65544ee55495e1bb37ec31b999b963cbccfd1d/nvidia_cusparselt_cu12-0.6.2-py3-none-manylinux2014_x86_64.whl
+DEBUG No cache entry for: https://files.pythonhosted.org/packages/df/99/12cd266d6233f47d00daf3a72739872bdc10267d0383508b0b9c84a18bb6/nvidia_nccl_cu12-2.21.5-py3-none-manylinux2014_x86_64.whl
+DEBUG No cache entry for: https://files.pythonhosted.org/packages/db/f7/97a9ea26ed4bbbfc2d470994b8b4f338ef663be97b8f677519ac195e113d/nvidia_cusparse_cu12-12.3.1.170-py3-none-manylinux2014_x86_64.whl
+DEBUG No cache entry for: https://files.pythonhosted.org/packages/27/94/3266821f65b92b3138631e9c8e7fe1fb513804ac934485a8d05776e1dd43/nvidia_cufft_cu12-11.2.1.3-py3-none-manylinux2014_x86_64.whl
+DEBUG No cache entry for: https://files.pythonhosted.org/packages/06/00/59500052cb1cf8cf5316be93598946bc451f14072c6ff256904428eaf03c/triton-3.2.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+DEBUG No cache entry for: https://files.pythonhosted.org/packages/9f/fd/713452cd72343f682b1c7b9321e23829f00b842ceaedcda96e742ea0b0b3/nvidia_cudnn_cu12-9.1.0.70-py3-none-manylinux2014_x86_64.whl
+DEBUG No cache entry for: https://files.pythonhosted.org/packages/e5/35/0c52d708144c2deb595cd22819a609f78fdd699b95ff6f0ebcd456e3c7c1/torch-2.6.0-cp312-cp312-manylinux1_x86_64.whl
+DEBUG Reverting changes to `pyproject.toml`
+DEBUG Removing `uv.lock`
+  × Failed to download `nvidia-nccl-cu12==2.21.5`
+  ├─▶ Failed to write to the distribution cache
+  ╰─▶ Failed to download distribution due to network timeout. Try increasing UV_HTTP_TIMEOUT (current value: 30s).
+  help: `nvidia-nccl-cu12` (v2.21.5) was included because `uv-install-pytorch` (v0.1.0) depends on `torch` (v2.6.0) which depends on `nvidia-nccl-cu12`
