@@ -1,3 +1,6 @@
+## NOT a bug, google home wifi? Huh? 
+[uv repo issue here](https://github.com/astral-sh/uv/issues/11156)
+
 ## Failing to install pytorch
 Either hands, and fails on timeout (all progress bars freeze), or with connection reset error.
 

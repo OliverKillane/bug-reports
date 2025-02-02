@@ -12,6 +12,19 @@ wheels = [
 ]
 
 [[package]]
+name = "nvidia-cudnn-cu12"
+version = "9.7.0.66"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "nvidia-cublas-cu12" },
+]
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/fe/8a/0efe67ee6d4d6e05d93e6deb9ae9520884e413f83dd2e012d62ec7e9589d/nvidia_cudnn_cu12-9.7.0.66-py3-none-manylinux_2_27_aarch64.whl", hash = "sha256:1bc9642c8c404603d674c52d3374d2973d07ec04bc5f97c0917a602451f4bdbd", size = 725752003 },
+    { url = "https://files.pythonhosted.org/packages/4b/6d/afece827c6cb52d8a193e558a69a47012d27c34548450476594a876f9ba7/nvidia_cudnn_cu12-9.7.0.66-py3-none-manylinux_2_27_x86_64.whl", hash = "sha256:85dcabd71dbf40e16433a9ae3b2a2f013984f7a639ae6e80d30670175fec9ae0", size = 726710473 },
+    { url = "https://files.pythonhosted.org/packages/92/1c/b1d2900ffff7a9ca09744c27f27c512556ae644cb9d01e6de3ad83750434/nvidia_cudnn_cu12-9.7.0.66-py3-none-win_amd64.whl", hash = "sha256:441ba9b6b58d7a4e47457c57e74d9d3fb114cff9ae816441d8ed263a42229568", size = 715864875 },
+]
+
+[[package]]
 name = "nvidia-cusolver-cu12"
 version = "11.6.1.9"
 source = { registry = "https://pypi.org/simple" }
@@ -55,11 +68,13 @@ version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
     { name = "nvidia-cublas-cu12" },
+    { name = "nvidia-cudnn-cu12" },
     { name = "nvidia-cusolver-cu12" },
 ]
 
 [package.metadata]
 requires-dist = [
     { name = "nvidia-cublas-cu12", specifier = "==12.4.5.8" },
+    { name = "nvidia-cudnn-cu12", specifier = "==9.7.0.66" },
     { name = "nvidia-cusolver-cu12", specifier = "==11.6.1.9" },
 ]
